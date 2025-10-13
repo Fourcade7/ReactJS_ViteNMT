@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "latohairline";
+  src: url("./assets/latohairline.ttf");
+  font-weight: bold;
+  
+}
+
+@font-face {
+  font-family: "latomedium";
+  src: url("./assets/latomedium.ttf");
+  font-weight: bold;
+  
+}
+
+
+@font-face {
+  font-family: "argentum";
+  src: url("./assets/argentum.ttf");
+  font-weight: bold;
+  
+}
+
+@font-face {
+  font-family: "hero";
+  src: url("./assets/hero.ttf");
+  font-weight: bold;
+  
+}
+
+@font-face {
+  font-family: "zerno";
+  src: url("./assets/zerno.ttf");
+  font-weight: bold;
+  
+}
+
+@font-face {
+  font-family: "gotham";
+  src: url("./assets/gotham.ttf");
+  font-weight: bold;
+  
+}
+
+@font-face {
+  font-family: "montserratmedium";
+  src: url("./assets/montserratmedium.ttf");
+  font-weight: bold;
+  
+}
+
+@font-face {
+  font-family: "montserratextraLight";
+  src: url("./assets/montserratextraLight.ttf");
+  font-weight: bold;
+  
+}
+
+@font-face {
+  font-family: "montserratLight";
+  src: url("./assets/montserratLight.ttf");
+  font-weight: bold;
+  
+}
+
+@font-face {
+  font-family: "montserratExtraBold";
+  src: url("./assets/montserratExtraBold.ttf");
+  font-weight: bold;
+  
+}
+@font-face {
+  font-family: "montserratThin";
+  src: url("./assets/montserratThin.ttf");
+  font-weight: bold;
+  
+}
+
+
