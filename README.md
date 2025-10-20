@@ -5,12 +5,14 @@
 
 
  2️⃣ Apache web root’ini tozalash
+ 
                sudo rm -rf /var/www/html/*
 
 
 Diqqat: eski fayllar o‘chadi.
 
 3️⃣ dist fayllarini web root’ga ko‘chirish
+
                sudo cp -r dist/* /var/www/html/
 
 
@@ -55,5 +57,6 @@ Ichiga yozish:
                 Saqlash → chiqish.
 
 6️⃣ mod_rewrite yoqish
+
                 sudo a2enmod rewrite
                 sudo systemctl restart apache2
