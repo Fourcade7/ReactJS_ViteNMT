@@ -21,6 +21,10 @@ Shu bilan barcha optimizatsiya qilingan fayllar /var/www/html ga nusxalanadi.
 4️⃣ .htaccess fallback yaratish
 
                 /var/www/html ichida .htaccess yaratish:
+                sudo touch /var/www/html/.htaccess
+nano install
+
+                sudo apt install nano -y
 
                 sudo nano /var/www/html/.htaccess
 
