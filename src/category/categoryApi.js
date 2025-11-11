@@ -2,7 +2,7 @@
 
 
 
-const urlGetAll="http://217.199.252.10:3000/category/getall";
+const urlGetAll="http://95.46.96.153:3000/category/getall";
 
 async function getAll() {
     try {

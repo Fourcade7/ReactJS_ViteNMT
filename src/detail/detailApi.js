@@ -2,8 +2,8 @@
 
 
 
-const urlGetAll="http://217.199.252.10:3000/item/getall";
-const urlGetBy="http://217.199.252.10:3000/product/getby";
+const urlGetAll="http://95.46.96.153:3000/item/getall";
+const urlGetBy="http://95.46.96.153:3000/product/getby";
 
 async function getAll() {
     try {

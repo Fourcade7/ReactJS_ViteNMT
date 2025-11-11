@@ -73,10 +73,11 @@ function ProductContent(props){
                 
                     <img className="rounded-3 object-fit-cover" src={item.imgUrl} height={220} width={350} alt=""></img>
                     <div className="position-absolute top-100 start-50 translate-middle w-100">
-                        <div className="rounded-2 mx-3 px-3 py-2 text-center" style={{backgroundColor:"#F7A709"}}><h4 className="m-0 fw-bold" style={{fontFamily:"montserratmedium"}}>{
-                          i18n.language==="en" ? item.nameen:
-                          i18n.language==="uz" ? item.nameuz:
-                          item.name
+                        <div className="rounded-2 mx-3 px-3 py-2 text-center" style={{backgroundColor:"#F7A709"}}><h4 className="m-0 fw-bold fs-6" style={{fontFamily:"montserratmedium"}}>{
+                          index+1
+                          // i18n.language==="en" ? item.nameen:
+                          // i18n.language==="uz" ? item.nameuz:
+                          // item.name
                           }</h4></div>
                     </div>
                     </div>

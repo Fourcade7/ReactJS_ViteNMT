@@ -1,22 +1,22 @@
 
 
 
-const addCategoryUrl="http://217.199.252.10:3000/category/image";
-const updateCategoryUrl="http://217.199.252.10:3000/category/update";
-const getAllCategoryUrl="http://217.199.252.10:3000/category/getall";
-const deleteCategoryUrl="http://217.199.252.10:3000/category/delete";
+const addCategoryUrl="http://95.46.96.153:3000/category/image";
+const updateCategoryUrl="http://95.46.96.153:3000/category/update";
+const getAllCategoryUrl="http://95.46.96.153:3000/category/getall";
+const deleteCategoryUrl="http://95.46.96.153:3000/category/delete";
 
 
-const addProductUrl="http://217.199.252.10:3000/product/image";
-const updateProductUrl="http://217.199.252.10:3000/product/update";
-const getAllProductUrl="http://217.199.252.10:3000/product/getall";
-const deleteProductUrl="http://217.199.252.10:3000/product/delete";
+const addProductUrl="http://95.46.96.153:3000/product/image";
+const updateProductUrl="http://95.46.96.153:3000/product/update";
+const getAllProductUrl="http://95.46.96.153:3000/product/getall";
+const deleteProductUrl="http://95.46.96.153:3000/product/delete";
 
 
-const addItemUrl="http://217.199.252.10:3000/item/image";
-const updateItemUrl="http://217.199.252.10:3000/item/update";
-const getAllItemUrl="http://217.199.252.10:3000/item/getall";
-const deleteItemUrl="http://217.199.252.10:3000/item/delete";
+const addItemUrl="http://95.46.96.153:3000/item/image";
+const updateItemUrl="http://95.46.96.153:3000/item/update";
+const getAllItemUrl="http://95.46.96.153:3000/item/getall";
+const deleteItemUrl="http://95.46.96.153:3000/item/delete";
 
 
 async function addCategory(name,nameuz,nameen,file) {
