@@ -8,6 +8,7 @@ import { Row,Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay,Navigation } from "swiper/modules"; 
+import { BitrixForm2 } from "../home/Home";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -28,7 +29,7 @@ import grandpharm from '../assets/grandpharm.png'
 import medicare from '../assets/medicare.png'
 import medcaretr from '../assets/medcaretr.png'
 import FooterContent from "../footer/MyFooter";
-import top3 from "../assets/top3.JPG"
+import top3 from "../assets/onas.jpg"
 
 
 
@@ -89,9 +90,9 @@ function TopContent(){
   
     return(
         <div>
-            <Row className="g-0" style={{backgroundColor:"#F7A709"}}>
-                <Col  className="d-flex align-items-center justify-content-center col-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 col-sm-12  p-5 text-white" style={{backgroundColor:"#F7A709"}}>
-                    <h4 className=" p-0 m-0" style={{fontFamily:"montserratThin"}}>{t("topdesc")}</h4>
+            <Row className="g-0" style={{backgroundColor:"#048bfe"}}>
+                <Col  className="d-flex align-items-center justify-content-center col-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 col-sm-12  p-5 text-white" style={{backgroundColor:"#048bfe"}}>
+                    <h4 className=" p-0 m-0" style={{fontFamily:"montserratmedium"}}>{t("topdesc")}</h4>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center col-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 col-sm-12">
                     <img className="object-fit-cover w-100" height={250} src={top3} alt="" />
@@ -113,7 +114,7 @@ function BigTextContentSlide(){
       <br />
       
       <Col className="container mx-auto text-center d-flex flex-column">
-          <h1><strong  style={{ fontFamily: "argentum" }}>{t("partners")}</strong></h1>
+          <h1><strong  style={{ fontFamily: "argentum",color:"#0f63aa" }}>{t("partners")}</strong></h1>
           <small>{t("partnersdesc")}</small>
       </Col>
       <br />
@@ -128,15 +129,18 @@ function AboutScreen(){
   const { t } = useTranslation();
     return(
         <div>
+            <div className="sticky-top bg-white">
             <TopLine></TopLine>
-            <div className='container'>
-              <MyNavbarScreen></MyNavbarScreen>
+            <div className="container-lg">
+                <MyNavbarScreen></MyNavbarScreen>
             </div>
+          </div>
             <TopContent></TopContent>
             <div className="container my-5">
                 <Row>
                 <Col>
-                              <p className="fw-bold">{t("contactus")}</p>
+               
+                             <p className="fw-bold">{t("contactus")}</p>
                               <div className="d-flex align-items-center mt-3">
                                 <img src={email} width={18} height={18} alt="" />
                                 <small className="ms-2">nestmedtech@gmail.com</small>
@@ -161,8 +165,11 @@ function AboutScreen(){
                                   <small className="">{t("addressfull")}</small>
                                   <img className="me-auto mt-2" src={placeholder} width={20} height={20} alt="" />
                                </div>
+
                               
-                        </Col>
+                
+                              
+                  </Col>
                 
                 <Col>
                 <MapScreen></MapScreen>
@@ -170,8 +177,17 @@ function AboutScreen(){
             </Row>
             </div>
             <br />
-            <BigTextContentSlide></BigTextContentSlide>
-            <SliderScreen></SliderScreen>
+             <Row className="justify-content-center">
+              <Col className="col-4">
+            <BitrixForm2></BitrixForm2>
+            </Col>
+            </Row>
+            <br />
+            <br />
+            {/* <BigTextContentSlide></BigTextContentSlide> */}
+            
+            {/* <SliderScreen></SliderScreen> */}
+            <br />
             <br />
             <FooterContent></FooterContent>
             

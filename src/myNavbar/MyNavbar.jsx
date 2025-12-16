@@ -16,7 +16,7 @@ import { useTranslation } from "react-i18next";
 //images
 
 import search from "../assets/search.png"
-import nstlogo from "../assets/nstlogo.png"
+import nstlogo from "../assets/newlogo.png"
 
 
 import call from "../assets/call.png"
@@ -71,7 +71,7 @@ function TopLine(){
 
     return(
         <div>
-            <Col className="d-flex align-items-center py-1 pe-5" style={{backgroundColor:"#2A4393"}}>
+            <Col className="d-flex align-items-center py-1 pe-5" style={{backgroundColor:"#048bfe"}}>
                <img className="ms-auto" src={call} width={15} height={15} alt="" />
                <small className="ms-3 text-white">+998 78 333 04 17</small>
                <img className="ms-3" src={earth} width={17} height={17} alt="" />
@@ -89,10 +89,8 @@ function MyNavbarScreen() {
       <Navbar collapseOnSelect expand="lg" className="bg-body-light">
       <Container>
         <Navbar.Brand className='d-flex align-items-center pe-3 border-end' href="#home">
-          <img className='object-fit-contain me-1' src={nstlogo} width={80} height={50} alt="" />
+          <img className='object-fit-contain me-1' src={nstlogo} width={120} height={50} alt="" />
          
-            <h6 className='fw-bold p-0 m-0'><strong >NEST MED <br />TECH</strong></h6>
-          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -103,11 +101,11 @@ function MyNavbarScreen() {
               <NavLink to="/about" className="nav-link " style={{fontFamily:"montserratmedium"}}>{t("aboutus")}</NavLink>
             
           </Nav>
-               <Form className="d-flex">
-                  <InputGroup className='rounded-5'>
-                    <Form.Control className=' px-3 py-2' placeholder={t("search")} aria-label="" />
+               <Form className="d-flex py-2"  >
+                  <InputGroup style={{backgroundColor:"#E2E8F0",borderRadius:"13px"}}>
+                    <Form.Control style={{backgroundColor:"#E2E8F0",borderRadius:"13px"}}  className=' px-3 py-2' placeholder={t("search")} aria-label="" />
                    
-                    <InputGroup.Text className='bg-white'>
+                    <InputGroup.Text className='p-3' style={{backgroundColor:"#E2E8F0",borderRadius:"13px"}}>
                      <img className="" src={search} width={17} height={17} alt="" />
                     </InputGroup.Text>
                   </InputGroup>

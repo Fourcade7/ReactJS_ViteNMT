@@ -7,7 +7,7 @@ import { MyNavbarScreen, TopLine } from '../myNavbar/MyNavbar';
 import FooterContent from '../footer/MyFooter';
 import { getAll ,getBy} from "./productApi";
 import { useTranslation } from 'react-i18next';
-import top1 from "../assets/top1.JPG"
+import top1 from "../assets/banneproducts.jpg"
 
 
 
@@ -18,9 +18,9 @@ function TopContent(){
   
     return(
         <div>
-            <Row className="g-0" style={{backgroundColor:"#2A4393"}}>
-                <Col  className="d-flex align-items-center justify-content-center col-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 col-sm-12  p-5 text-white" style={{backgroundColor:"#F7A709"}}>
-                    <h4 className=" p-0 m-0" style={{fontFamily:"montserratThin"}}>{t("topdesc")}</h4>
+            <Row className="g-0" style={{backgroundColor:"#048bfe"}}>
+                <Col  className="d-flex align-items-center justify-content-center col-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 col-sm-12  p-5 text-white" style={{backgroundColor:"#048bfe"}}>
+                    <h4 className=" p-0 m-0" style={{fontFamily:"montserratmedium"}}>{t("topdesc")}</h4>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center col-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 col-sm-12">
                     <img className="object-fit-cover w-100" height={250} src={top1} alt="" />
@@ -93,11 +93,11 @@ function ProductContent(){
                   navigate("/detail",{state:item});
               }}
                 >
-                    <div className="position-relative d-inline-block">
+                    <div className="d-flex flex-column  mt-5" style={{width: "350px"}}>
                 
                     <img className="rounded-3 object-fit-cover" src={item.imgUrl} height={220} width={350} alt=""></img>
-                    <div className="position-absolute top-100 start-50 translate-middle w-100">
-                        <div className="rounded-2 mx-3 px-3 py-2 text-center" style={{backgroundColor:"#F7A709"}}><h4 className="m-0 fw-bold" style={{fontFamily:"montserratmedium"}}>{
+                    <div  className=" w-100 mt-3">
+                        <div className="rounded-2 mx-3 px-3 py-2 text-center"><h4 className="m-0 fw-bold" style={{fontFamily:"montserratmedium"}}>{
                           i18n.language==="en" ? item.nameen:
                           i18n.language==="uz" ? item.nameuz:
                           item.name 
@@ -125,7 +125,7 @@ function BigTextContent(){
       <br />
       
       <Col className=" mx-auto text-center d-flex flex-column">
-          <h1><strong  style={{ fontFamily: "montserratExtraBold" }}>{t("ourproducts")}</strong></h1>
+          <h1><strong  style={{ fontFamily: "montserratExtraBold",color:"#0f63aa" }}>{t("ourproducts")}</strong></h1>
           <small>{t("ourproductsshow")}</small>
       </Col>
       <br />
@@ -144,10 +144,12 @@ function ProductScreen(){
 
   return(
     <div>
-      <TopLine></TopLine>
-      <div className='container'>
-        <MyNavbarScreen></MyNavbarScreen>
-      </div>
+      <div className="sticky-top bg-white">
+            <TopLine></TopLine>
+            <div className="container-lg">
+                <MyNavbarScreen></MyNavbarScreen>
+            </div>
+       </div>
       <TopContent></TopContent>
       <br />
       <br />

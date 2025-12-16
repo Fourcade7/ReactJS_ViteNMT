@@ -7,7 +7,7 @@
   "product":"Mahsulotlar",
   "aboutus":"Biz haqimizda",
   "contact":"Bog'lanish",
-  "topdesc":"Yosh, jadal rivojlanayotgan NESTMEDTECH kompaniyasi bir martalik tibbiy kiyim va ichki kiyimlar, shaxsiy himoya vositalari, turli tibbiy muolajalarni ko‘rsatishda qo‘llaniladigan jarrohlik to‘plamlarini ishlab chiqarish bilan shug‘ullanadi.",
+  "topdesc":"Yosh, jadal rivojlanayotgan NEST MED TECH kompaniyasi bir martalik tibbiy kiyim va shaxsiy himoya vositalari, turli tibbiy muolajalarni ko‘rsatishda qo‘llaniladigan jarrohlik to‘plamlarini ishlab chiqarish bilan shug‘ullanadi.",
   "goal":"Kompaniyamiz maqsadi",
   "economy":"Xodimlar vaqtini tejash",
   "economydesc":"Bir martalik kiyimlar ishlatilgandan so‘ng darhol tashlab yuborilishi mumkin, qo‘shimcha yuvish yoki ishlov berish talab etilmaydi.",
@@ -32,5 +32,13 @@
   "composition":"Tarkibi",
   "sizesm":"O'lchami (sm)",
   "quantity":"Miqdori",
-  "compdesc":"Bu yerda siz mahsulotlarimiz tarkibini ko‘rishingiz mumkin."
+  "compdesc":"Bu yerda siz mahsulotlarimiz tarkibini ko‘rishingiz mumkin.",
+  "news":"Yangiliklar",
+  "newsdesc":"Yangiliklar tavsifi",
+  "news1":"🇺🇿 Konstitutsiya kuni bilan",
+  "news2":"Shifokorlar kuni bilan!",
+  "news3":"NEST MED TECH - tibbiyotda yangilik",
+  "news1desc":"🇺🇿 NEST MED TECH kompaniyasi barcha o‘zbekistonliklarni Konstitutsiya kuni bilan tabriklaydi! Pust etot den napominayet o pravax i prinsipax, yavlyayushixsya osnovoy lyubogo spravedlivogo obshestva, o tom, chto kajdiy chelovek doljen jit dostoyno, dostoyen ravenstva i spravedlivosti!",
+  "news2desc":"Shifokorlar kuni bilan! Bugun biz inson hayoti va sog‘lig‘i yo‘lida fidokorona xizmat qilayotgan shifokorlar, jarrohlar, hamshiralar va barcha tibbiyot xodimlarini samimiy tabriklaymiz. Sizning mehnatingiz — bu oddiy kasb emas, bu chaqiriq, mas’uliyat va insonparvarlik timsoli. Siz odamlarga umid, sog‘lik va ishonch hadya etasiz. NEST-MED-TECH jamoasi sizning fidokorligingiz va professionalligingiz uchun chuqur minnatdorlik bildiradi. Biz sizning muqaddas ish faoliyatingizga o‘z hissamizni qo‘shayotganimizdan faxrlanamiz.",
+  "news3desc":"🇹🇲 Turkmanistonda bo'lib o‘tgan xalqaro tibbiy ko‘rgazma biz uchun oddiy tadbir emas, balki O‘zbekiston tibbiyot sanoatining kuchi va salohiyatini dunyoga namoyish etish imkoniyati bo‘ldi. Bu safar biz nafaqat mahsulotlarimizni, balki innovatsion yondashuv, mukammallikka intilish va xalqaro standartlarga mos sifat falsafasini olib bordik."
 }

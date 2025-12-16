@@ -26,20 +26,47 @@ function FooterContent(){
               <p className="fw-bold">{t("contactus")}</p>
               <div className="d-flex align-items-center mt-3">
                 <img src={mobile} width={18} height={18} alt="" />
-                <small className="ms-2">+998 78 333 04 17</small>
+                <small as Link ="google.com" className="ms-2">+998 78 333 04 17</small>
               </div>
               <div className="d-flex align-items-center mt-2">
-                <img src={instagram} width={18} height={18} alt="" />
-                <small className="ms-2">@instagram.comnestmedtech</small>
-              </div>
-              <div className="d-flex align-items-center mt-2">
-                <img src={youtube} width={18} height={18} alt="" />
-                <small className="ms-2">@nestmedtech</small>
-              </div>
-              <div className="d-flex align-items-center mt-2">
-                <img src={telegram} width={18} height={18} alt="" />
-                <small className="ms-2">@nestmedtech</small>
-              </div>
+  <a
+    href="https://www.instagram.com/nest_med_tech/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="d-flex align-items-center small link-dark text-decoration-none"
+    aria-label="Instagram - nest_med_tech"
+  >
+    <img src={instagram} width={18} height={18} alt="Instagram" />
+    <span className="ms-2">@nest_med_tech</span>
+  </a>
+</div>
+
+<div className="d-flex align-items-center mt-2">
+  <a
+    href="https://www.youtube.com/@NestMedTech"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="d-flex align-items-center small link-dark text-decoration-none"
+    aria-label="YouTube - NestMedTech"
+  >
+    <img src={youtube} width={18} height={18} alt="YouTube" />
+    <span className="ms-2">@NestMedTech</span>
+  </a>
+</div>
+
+<div className="d-flex align-items-center mt-2">
+  <a
+    href="https://t.me/nestmedtech"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="d-flex align-items-center small link-dark text-decoration-none"
+    aria-label="Telegram - nestmedtech"
+  >
+    <img src={telegram} width={18} height={18} alt="Telegram" />
+    <span className="ms-2">@t.me/nestmedtech</span>
+  </a>
+</div>
+
               
         </Col>
         

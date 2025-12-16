@@ -55,7 +55,7 @@ function TableContent(props){
 
 
 function ProductContent(props){
-  const { t,i18n} = useTranslation();
+  //const { t,i18n} = useTranslation();
     const navigate=useNavigate();
 
   return(
@@ -73,7 +73,7 @@ function ProductContent(props){
                 
                     <img className="rounded-3 object-fit-cover" src={item.imgUrl} height={220} width={350} alt=""></img>
                     <div className="position-absolute top-100 start-50 translate-middle w-100">
-                        <div className="rounded-2 mx-3 px-3 py-2 text-center" style={{backgroundColor:"#F7A709"}}><h4 className="m-0 fw-bold fs-6" style={{fontFamily:"montserratmedium"}}>{
+                        <div className="rounded-2 mx-3 px-3 py-2 text-center" ><h4 className="m-0 fw-bold fs-6" style={{fontFamily:"montserratmedium"}}>{
                           index+1
                           // i18n.language==="en" ? item.nameen:
                           // i18n.language==="uz" ? item.nameuz:
@@ -102,7 +102,7 @@ function BigTextContent(){
       <br />
       
       <Col className=" mx-auto text-center d-flex flex-column">
-          <h1><strong  style={{ fontFamily: "montserratExtraBold" }}>{t("composition")}</strong></h1>
+          <h1><strong  style={{ fontFamily: "montserratExtraBold",color:"#0f63aa" }}>{t("composition")}</strong></h1>
           <small>{t("compdesc")}</small>
       </Col>
       <br />
@@ -154,11 +154,12 @@ function ItemScreen(){
 
   return(
     <div>
-      <TopLine></TopLine>
-      <div className='container'>
-        <MyNavbarScreen></MyNavbarScreen>
+      <div className="sticky-top bg-white">
+            <TopLine></TopLine>
+            <div className="container-lg">
+                <MyNavbarScreen></MyNavbarScreen>
+            </div>
       </div>
-     
       <br />
       <br />
       <br />

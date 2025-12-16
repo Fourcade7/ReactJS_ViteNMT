@@ -7,7 +7,7 @@
   "product":"Product",
   "aboutus":"Abous US",
   "contact":"Contact",
-  "topdesc":"The young, dynamically developing company NESTMEDTECH is engaged in the production of disposable medical clothing and linen, personal protective equipment, and operating kits used in various types of medical procedures.",
+  "topdesc":"The young, dynamically developing company NEST MED TECH is engaged in the production of disposable medical clothing and linen, personal protective equipment, and operating kits used in various types of medical procedures.",
   "goal":"Our company's goal",
   "economy":"Staff time savings",
   "economydesc":"After use, disposable linen can be discarded immediately, requiring no additional washing or processing.",
@@ -32,7 +32,16 @@
   "composition":"Composition",
   "sizesm":"Size (sm)",
   "quantity":"Quantity",
-  "compdesc":"Here you can see the composition of our products."
+  "compdesc":"Here you can see the composition of our products.",
+  "news":"News",
+  "newsdesc":"News Description",
+  "news1":"Uzbekistanis on Constitution Day!",
+  "news2":"Happy Doctors' Day!",
+  "news3":"NEST MED TECH - innovation in medicine",
+  "news1desc":"🇺🇿 NEST MED TECH company congratulates all Uzbekistanis on Constitution Day! May this day be a day that reminds us of the rights and principles that are the foundation of any just society, that every person should live a decent life, and that they deserve equality and justice!",
+  "news2desc":"Happy Doctors' Day! Today we sincerely congratulate doctors, surgeons, nurses, and all medical workers who are selflessly serving the cause of human life and health. Your work is not an ordinary profession, it is a call, a symbol of responsibility and humanism. You give people hope, health, and confidence. The NEST-MED-TECH team expresses their deep gratitude for your dedication.",
+  "news3desc":"🇹🇲 The international medical exhibition held in Turkmenistan was not just an ordinary event for us, but an opportunity to demonstrate the strength and potential of Uzbekistan's medical industry to the world. This time we brought not only our products, but also an innovative approach, a striving for excellence, and a philosophy of quality that meets international standards."
+
   
 
 }
