@@ -32,7 +32,7 @@ import medicare from '../assets/medicare.png'
 import medcaretr from '../assets/medcaretr.png'
 
 import top2 from "../assets/bannerhome.jpg"
-import newlogo from "../assets/newlogo.png"
+//import newlogo from "../assets/newlogo.png"
 
 import news1 from '../assets/news1.jpg'
 import news2 from '../assets/news2.jpg'
@@ -123,7 +123,7 @@ function TopContent(){
         <div>
             <Row className="g-0" style={{backgroundColor:"#048bfe"}}>
                 <Col  className="d-flex align-items-center justify-content-center col-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 col-sm-12  p-5 text-white" style={{backgroundColor:"#048bfe"}}>
-                    <h4 className=" p-0 m-0" style={{fontFamily:"montserratmedium"}}>{t("topdesc")}</h4>
+                    <h4 className=" p-0 m-0" style={{fontFamily:"futuramedium"}}>{t("topdesc")}</h4>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center col-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 col-sm-12">
                     <img className="object-fit-cover w-100" height={250} src={top2} alt="" />
@@ -290,17 +290,17 @@ function NewsCompanyInfo(){
           <Col className="d-flex flex-column align-items-center rounded-4 p-4 me-2">
             <img className="object-fit-cover" width={200} height={200} src={news1} alt="" />
             <p className="mt-3 fw-bold text-center">{t("news1")}</p>
-            <small className="text-center">{t("news1desc")}</small>
+            <small className="text-center"><a className="link-dark" target="_blank" href="https://t.me/nestmedtech/203">{t("news1desc")}</a></small>
           </Col>
           <Col className="d-flex flex-column align-items-center rounded-4 p-4 ms-2 me-2">
             <img className="object-fit-cover" width={200} height={200} src={news2} alt="" />
             <p className="mt-3 fw-bold">{t("news2")}</p>
-            <small className="text-center">{t("news2desc")}</small>
+           <small className="text-center"><a className="link-dark" target="_blank" href="https://t.me/nestmedtech/208">{t("news2desc")}</a></small>
           </Col>
           <Col className="d-flex flex-column align-items-center rounded-4 p-4 ms-2 me-2">
             <img className="object-fit-cover" width={200} height={200} src={news3} alt="" />
             <p className="mt-3 fw-bold">{t("news3")}</p>
-            <small className="text-center">{t("news3desc")}</small>
+           <small className="text-center"><a className="link-dark" target="_blank" href="https://t.me/nestmedtech/209">{t("news3desc")}</a></small>
           </Col>
           
         </Row>

@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "argentum";
-  src: url("./assets/argentum.ttf");
+  src: url("./assets/futurabold.ttf");
   font-weight: bold;
   
 }
@@ -42,13 +42,20 @@
 }
 
 @font-face {
+  font-family: "futuramedium";
+  src: url("./assets/futuramedium.ttf");
+  font-weight: bold;
+  
+  
+}
+
+@font-face {
   font-family: "montserratmedium";
   src: url("./assets/montserratmedium.ttf");
   font-weight: bold;
   
   
 }
-
 @font-face {
   font-family: "montserratextraLight";
   src: url("./assets/montserratextraLight.ttf");
@@ -58,20 +65,20 @@
 
 @font-face {
   font-family: "montserratLight";
-  src: url("./assets/montserratLight.ttf");
+  src: url("./assets/futuramedium.ttf");
   font-weight: bold;
   
 }
 
 @font-face {
   font-family: "montserratExtraBold";
-  src: url("./assets/montserratExtraBold.ttf");
+  src: url("./assets/futurabold.ttf");
   font-weight: bold;
   
 }
 @font-face {
   font-family: "montserratThin";
-  src: url("./assets/montserratThin.ttf");
+  src: url("./assets/futuramedium.ttf");
   font-weight: bold;
   
 }
