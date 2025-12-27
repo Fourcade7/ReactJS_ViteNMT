@@ -14,6 +14,7 @@ import { ProductScreen } from './product/Product'
 import { ItemScreen } from './detail/Detail'
 import { AboutScreen } from './about/About'
 import AdminScreen from './adminp/adminp'
+import { ProductScreenNew } from './product_new/ProductNew'
 
 function App() {
   
@@ -23,7 +24,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomeScreen></HomeScreen>}></Route>
         <Route path='/category' element={<CategoryScreen></CategoryScreen>}></Route>
-        <Route path='/product' element={<ProductScreen></ProductScreen>}></Route>
+        <Route path='/product' element={<ProductScreenNew></ProductScreenNew>}></Route>
         <Route path='/detail' element={<ItemScreen></ItemScreen>}></Route>
         <Route path='/about' element={<AboutScreen></AboutScreen>}></Route>
         <Route path='/admin' element={<AdminScreen></AdminScreen>}></Route>
