@@ -16,57 +16,62 @@ import TabScreen1 from "./tabScreen1";
 import TabScreen2 from "./tabScreen2";
 import TabScreen3 from "./tabScreen3";
 
-
+import { getAllCategory } from "./adminApi";
 
 
 function TabsExample() {
+ 
+   let [selectedCategory,setSelectedCategory]=useState("")
+    let [selectedCategoryId,setSelectedCategoryId]=useState(-1)
+   const [categoryReulst,setCategoryResult]=useState(null);
+  async function fetchData() {
+        
+        const cResult=await getAllCategory();
+        setCategoryResult(cResult);
+        
+    }
 
+    useEffect(()=>{
+        fetchData();
+    },[])
+
+ 
    const [activeKey, setActiveKey] = useState('#link1');
   return (
     <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
       <Row className="mt-2 g-2">
         <Col sm={3}>
          <ListGroup className='rounded-0' activeKey={activeKey} onSelect={setActiveKey}>
-      <ListGroup.Item 
-        action 
-        eventKey="#link1"
-        style={{
-          backgroundColor: activeKey === '#link1' ? '#048bfe' : 'transparent',
-          color: activeKey === '#link1' ? 'white' : 'inherit'
-        }}
-        variant={activeKey === '#link1' ? 'success' : ''}
-      >
-        Категории 1
-      </ListGroup.Item>
-      <ListGroup.Item 
-        action 
-        eventKey="#link2"
-        style={{
-          backgroundColor: activeKey === '#link2' ? '#048bfe' : 'transparent',
-          color: activeKey === '#link2' ? 'white' : 'inherit'
-        }}
-        variant={activeKey === '#link2' ? 'success' : ''}
-      >
-        Категории 2
-      </ListGroup.Item>
-      <ListGroup.Item 
-        action 
-        eventKey="#link3"
-        style={{
-          backgroundColor: activeKey === '#link3' ? '#048bfe' : 'transparent',
-          color: activeKey === '#link3' ? 'white' : 'inherit'
-        }}
-        variant={activeKey === '#link3' ? 'success' : ''}
-      >
-        Категории 3
-      </ListGroup.Item>
+
+          { categoryReulst &&(
+                categoryReulst.map(item=>(
+                  <ListGroup.Item
+                      key={item.id}
+                      action
+                      onClick={() => {
+                        setActiveKey(item.id);
+                        setSelectedCategory(item.name);
+                        setSelectedCategoryId(item.id);
+                        console.log(selectedCategoryId);
+                        
+                      }}
+                      style={{
+                        backgroundColor: activeKey === item.id ? '#048bfe' : 'transparent',
+                        color: activeKey === item.id ? 'white' : 'black'
+                      }}
+                    >
+                      {item.name}
+                    </ListGroup.Item>
+             )))}
+      
+     
     </ListGroup>
 
         </Col>
         <Col sm={9}>
           <Tab.Content>
             <Tab.Pane className="" eventKey="#link1">
-              <ProductContent></ProductContent>
+              <ProductContent catId={selectedCategoryId}></ProductContent>
             </Tab.Pane>
             <Tab.Pane className="" eventKey="#link2">Tab2</Tab.Pane>
             <Tab.Pane className="" eventKey="#link3">Tab3</Tab.Pane>
@@ -117,7 +122,7 @@ function TopContentOld(){
 
 }
 
-function ProductContent(){
+function ProductContent(props){
    const { i18n } = useTranslation();
     const navigate=useNavigate();
 
@@ -140,15 +145,29 @@ function ProductContent(){
         console.log("ID", res);
       });
     } else {
+
       await getAll().then(res => {
         setArray(res);
         console.log("get ALL", res);
       });
     }
+    
+    if(props.catId!==-1){
+     
+      console.log("props.catId");
+      console.log(props.catId);
+      
+      await getBy(props.catId).then(res => {
+        setArray(res.products);
+        console.log("ID", res);
+      });
+    }
+    
+
       
     } 
     load();
-    },[]);
+    },[props.catId]);
 
   return(
     <div>
@@ -209,6 +228,7 @@ function BigTextContent(){
 
 function ProductScreenNew(){
 
+ 
 
   return(
     <div>

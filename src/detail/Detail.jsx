@@ -93,7 +93,10 @@ function ProductContent(props){
 }
 
 function BigTextContent(){
-  const { t} = useTranslation();
+
+   const location=useLocation();
+  const data=location.state;
+  const {i18n, t} = useTranslation();
   return(
     <div className="d-flex mt-5">
       <br />
@@ -102,7 +105,10 @@ function BigTextContent(){
       <br />
       
       <Col className=" mx-auto text-center d-flex flex-column">
-          <h1><strong  style={{ fontFamily: "montserratExtraBold",color:"#0f63aa" }}>{t("composition")}</strong></h1>
+          <h1><strong  style={{ fontFamily: "montserratExtraBold",color:"#0f63aa" }}>{t("composition")} {
+                          i18n.language==="en" ? data.nameen:
+                          i18n.language==="uz" ? data.nameuz:
+                          data.name }</strong></h1>
           <small>{t("compdesc")}</small>
       </Col>
       <br />
