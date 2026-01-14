@@ -21,6 +21,7 @@ import { getAllCategory } from "./adminApi";
 
 function TabsExample() {
  
+   const { i18n,t } = useTranslation();
    let [selectedCategory,setSelectedCategory]=useState("")
     let [selectedCategoryId,setSelectedCategoryId]=useState(-1)
    const [categoryReulst,setCategoryResult]=useState(null);
@@ -41,6 +42,7 @@ function TabsExample() {
     <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
       <Row className="mt-2 g-2">
         <Col sm={3}>
+        <h4  className='ms-3' style={{ fontFamily: "argentum",color:"#0f63aa" }}>{t("category")}</h4>
          <ListGroup className='rounded-0' activeKey={activeKey} onSelect={setActiveKey}>
 
           { categoryReulst &&(
@@ -174,7 +176,7 @@ function ProductContent(props){
       <div className="container">
       <Row className='row-cols-auto g-3'>
         {array.length>0 && 
-            array.map((item,index)=>(
+            array.slice().reverse().map((item,index)=>(
                 <Col key={index}
                   onClick={()=>{
                   navigate("/detail",{state:item});
